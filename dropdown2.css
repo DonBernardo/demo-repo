@@ -1,0 +1,119 @@
+*{
+	/*background: black;*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.nav{
+	display: block;
+	text-align: center;
+	width: -webkit-max-content;
+	position: absolute;	
+}
+
+.nav li{
+	list-style: none;
+}
+
+
+.hamburger > div{
+	height: 8px;
+	width: 50px;
+	border-radius: 10px;
+	margin-top: 3px;
+	/*background: #212020;*/
+	background: black;
+}
+
+.hamburger:hover{
+	cursor: pointer;
+	/*width: intrinsic;            Safari/WebKit uses a non-standard name */
+  	/*width: -moz-max-content;     Firefox/Gecko */
+  	width: -webkit-max-content; /* Chrome */
+  	/*width: max-content;*/
+	 /*box-shadow: 2px 2px #2b2a2a; */
+}
+
+.menu-container{
+	text-align: left;
+	width: 150px;
+	display: none;
+	/*background: red;*/
+}
+.hamburger:hover .menu-container{
+	display: block;
+}
+
+.menu-container > .menu-item{
+	/*background: #2b2a2a;*/
+	/*background: rgb(3 197 9);*/
+	background: rgb(3 197 9);
+	padding: 10px;
+	border-bottom: 1px solid white;
+	/*cursor: pointer;*/
+}
+
+.nav a{
+	text-decoration: none;
+	font-family: 'Anton';
+	color: black;
+}
+
+.menu-container > .menu-item:hover{
+	/*background: #212121;*/
+	background: #03820b;
+}
+
+.menu-container > .menu-item:hover a{
+	/*color: gray;*/
+}
+
+
+.menu-container .menu-item ul{
+	display: none;
+}
+
+
+.menu-container .menu-item ul{
+	display: none;
+	position: absolute;
+	/*background: green;*/
+	width: 150px;
+	left: 50%;
+	text-align: left;
+}
+
+.menu-container > .menu-item:hover ul{
+	display: block;
+}
+
+.main-menu > li a{
+	color: black;
+}
+.main-menu > li{
+	/*background: #2b2a2a;*/
+	/*background: rgb(3 197 9);*/
+	background: rgb(3 197 9);
+	padding: 10px;
+	border-bottom: 1px solid white;
+	/*list-style: none;*/
+}
+
+.main-menu > li:hover{
+	/*background: #212121;*/
+	background: #03820b;
+}
+
+.main-menu > li:hover a{
+	/*color: gray;*/
+}
+
+
+table,tr,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	font-size: 12px;
+	padding: 3px;
+	background: white;
+}

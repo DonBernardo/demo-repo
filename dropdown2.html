@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dropdown 2</title>
+	<link rel="stylesheet" type="text/css" href="dropdown2.css">
+	<link rel="stylesheet" type="text/css" href="table_search.css">
+
+</head>
+<body style="background: #f2f2f2;">
+<div>
+
+	<div style="display: grid; width: 100%; display: grid; grid-template-columns: 1fr 4fr;">
+		<div style="text-align: center; margin: .5px; height: 55px; background: white; position: relative; background: rgb(3 197 9); font-weight: bold; padding: 10px; color: white;">
+			TITLE
+		</div>
+		<div style="margin: .5px; padding: 10px; background: rgb(3 197 9); position: relative; width: 100%; height: 55px; z-index: 1;">
+			<nav>
+				<ul class="nav">
+					<li class="hamburger">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+						<ul class="menu-container">
+							<li class="menu-item">
+								<a href="#">Dashboard</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Adhoc</a>
+							</li>
+							<li class="menu-item">
+								<a href="#">Sales Watch</a>
+								<ul class="main-menu">
+									<li><a href="">Company</a></li>
+									<li><a href="">Product Group</a></li>
+									<li><a href="">Channel</a></li>
+									<li><a href="">Business Unit</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div style="bottom: 0; text-align: center; color: white; font-weight: bold;">
+				TITLE
+			</div>
+			<div style="bottom: 0; right: 10px; position: absolute; display: inline-flex;">
+				<p style="color: white; font-weight: bold;">Bernard San Jose:
+					<img src="./koala.jpg" style="width: 60px; border: 1px solid black; border-radius: 50%;">
+				</p>
+			</div>
+		</div>
+		<div style="margin: .5px; height: 100vh; position: relative; background: #e0dbdb; font-weight: bold; padding: 10px; color: white;">
+			<div style="display: inline-flex; padding: 5px;">
+				<label for="year" style="background: none; border: none;">Year:</label>
+				<select name="year" id="year">
+					<option>All</option>
+					<option>2019</option>
+					<option>2020</option>
+					<option>2021</option>
+				</select>
+				<label for="quarter" style="background: none; border: none;">Qtr:</label>
+				<select name="quarter" id="quarter">
+					<option>All</option>
+					<option>Q1</option>
+					<option>Q2</option>
+					<option>Q3</option>
+					<option>Q4</option>
+				</select>
+				<label for="month" style="background: none; border: none;">Month:</label>
+				<select name="month" id="month">
+					<option>All</option>
+					<option>Jan</option>
+					<option>Feb</option>
+					<option>Mar</option>
+					<option>Apr</option>
+					<option>May</option>
+					<option>Jun</option>
+					<option>Jul</option>
+					<option>Aug</option>
+					<option>Sep</option>
+					<option>Oct</option>
+					<option>Nov</option>
+					<option>Dec</option>
+				</select>
+			</div>
+			<div style="width: 100%; background: #e0dbdb; padding: 5px;">
+			  <h3 style="color: black;">My Phonebook</h3>
+			  <!-- box-shadow: 5px 5px gray; -->
+			  <!-- border: 1px solid black; -->
+			  <!-- border-radius: 10px 10px 0px 0px; -->
+			  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+			  <ul id="myUL">
+			    <li><label for="id1"><input id="id1" type="checkbox" name="">
+			      Adele</label></li>
+
+			    <li><label for="id2"><input id="id2" type="checkbox" name="">
+			      Agnes</label></li>
+
+			    <li><label for="id3"><input id="id3" type="checkbox" name="">
+			      Billy</label></li>
+
+			    <li><label for="id4"><input id="id4" type="checkbox" name="">
+			        Bob</label></li>
+
+			    <li><label for="id5"><input id="id5" type="checkbox" name="">
+			        Calvin</label></li>
+
+			    <li><label for="id6"><input id="id6" type="checkbox" name="">
+			        Christina</label></li>
+
+			    <li><label for="id7"><input id="id7" type="checkbox" name="">
+			        Cindy</label></li>
+			  </ul>
+			</div>
+			<br/>
+			<div style="background: white; height: 2px;"></div>
+			<!-- <frame src="./responsive_tbl_in_search/responsive_tbl.html"></frame> -->
+			<!-- <iframe src="./responsive_tbl_in_search/responsive_tbl.html" height=100%; title="Iframe Example"></iframe> -->
+
+
+		</div>
+		<div style="margin: .5px; height: 100vh;  position: relative; letter-spacing: 2px; padding: 10px;">
+			<div style="padding: 50px;">
+				<h1><b>REPORT TITLE</b></h1>
+			</div>
+			<table>
+				<thead>
+					<tr>
+						<th>Sales category</th><th>Actual</th><th>Projection</th><th>Perf</th><th>Variance</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Total</th><th>82,068,393.33</th><th>78,718,002.49</th><th></th><th>3,350,390.84</th>
+					</tr>
+					<tr>
+						<td>Regular Sales</td><td>82,068,393.33</td><td>78,718,002.49</td><td>104%</td><td>3,350,390.84</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+	</div>
+
+	
+</div>
+<script type="text/javascript" src="./table_search.js"></script>
+</body>
+</html>
