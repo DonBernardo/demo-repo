@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 6px 8px 6px 16px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+#myUL {
+  list-style-type: none;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  height: 150px;
+}
+
+#myUL li a, label{
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 8px;
+  /*text-decoration: none;*/
+  font-size: 16px;
+  font-family: ;
+  color: black;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+#myUL li label:hover:not(.header) {
+  background-color: #eee;
+}
+
+/*h3{
+  background: blue;
+}*/
